@@ -117,10 +117,15 @@
         <br>
         <a href="https://arxiv.org/abs/2410.20357">[paper]</a>
         <a href="https://sim2real-capture.github.io/">[webpage]</a>
-        <button onclick="toggleDescription('desc1')">[description]</button>
-        <div id="desc1" style="display:none; margin-top:10px; background-color:#f9f9f9; padding:10px; border:1px solid #ddd; border-radius:5px;">
-            <p>This project explores the use of dynamics as prompts for system identification in sim-to-real tasks. 
-            It leverages in-context learning to align simulation and real-world performance through adaptive strategies.</p>
+        <a href="javascript:void(0)" onclick="toggleDescription('desc1')">[description]</a>
+        <div id="desc1" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+            <p>We designed and implemented a method leveraging a transformer model with in-context learning capabilities. 
+              During training, we treated dynamic parameters—such as friction, inertia, and mass—as prompts, guiding the model to align its simulation-based predictions with real-world data. 
+              This work involved setting up simulations that incorporated these prompts, allowing the model to adapt to new environments in real time by learning to adjust based on unique conditions for each task.
+              In this work, I was responsible for experiment designs, algorithm development, and paper writing.
+              Through rigorous experimentation, we demonstrated a significant reduction in the sim-to-real performance gap. 
+              The model achieved a 30% improvement in task success rates compared to baseline methods. 
+              This improvement was particularly notable in environments where dynamic factors were critical to task success, such as in complex object manipulation and navigation tasks.</p>
         </div>
     </td>
 </tr>
@@ -154,6 +159,15 @@
                 <em>arxiv, submitted to ICRA 2025. </em>
                 <br>
                 <a href="https://arxiv.org/abs/2409.19746">[paper]</a>
+                <a href="javascript:void(0)" onclick="toggleDescription('desc1')">[description]</a>
+                <div id="desc1" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+                    <p>In robotics, learning policies that are robust to dynamic and environmental uncertainties remains a major challenge, particularly in scenarios requiring resilience against adversarial disturbances. 
+                      This work investigates a novel approach using Hamilton-Jacobi (HJ) Reachability to generate interpretable, optimal disturbances that guide adversarial training, enhancing the robustness of reinforcement learning (RL) policies.
+                      The methodology leverages HJ Reachability analysis to derive optimal disturbances, which serve as interpretable adversarial inputs during RL training. 
+                      I led the development of an environment framework where these disturbances can be applied, both in simulated and real-world environments. 
+                      This setup enabled the reinforcement learning agent to encounter various challenging scenarios induced by HJ-guided disturbances, effectively conditioning the policy for robust behavior. 
+                      Additionally, I validated the effectiveness of HJ disturbances by conducting real-world experiments, tuning the policy’s response to the adversarial inputs for enhanced robustness.</p>
+                </div>
             </td>
           </tr>
 
@@ -182,6 +196,15 @@
                 <em>Abridged in CoRL 2023 Workshop on Language and Robot Learning.</em><br>
                 <a href="https://arxiv.org/abs/2310.13065">[paper]</a>
                 <a href="https://creative-robotool.github.io/">[webpage]</a>
+                <a href="javascript:void(0)" onclick="toggleDescription('desc1')">[description]</a>
+                <div id="desc1" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+                    <p>Traditionally, robots struggle to adaptively use objects in their environment as tools, limiting their utility in unstructured settings. 
+                      The "RoboTool" project explores how Large Language Models (LLMs) can enhance a robot's ability to creatively use various objects as tools by leveraging affordance reasoning.
+                      The project involved integrating an LLM with a robotic system to operate in both simulated and real-world environments. 
+                      I led the development of the manipulation simulation, designing scenarios that allowed the LLM to generate affordance-based prompts for various objects, guiding the robot’s tool use in diverse tasks. 
+                      Additionally, I conducted real-world experiments to validate the simulation findings, fine-tuning the robot’s responses to language-based cues for effective tool manipulation.</p>
+                </div>
+                  
             </td>
           </tr>
 
@@ -207,6 +230,15 @@
                 <em>Abridged in RSS 2023 Workshop on Symmetries in Robot Learning.</em><br>
                 <a href="https://arxiv.org/pdf/2210.12301.pdf">[paper]</a>
                 <a href="https://sites.google.com/view/rl-covers/">[webpage]</a>
+                <a href="javascript:void(0)" onclick="toggleDescription('desc1')">[description]</a>
+                <div id="desc1" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+                    <p>Robotic agents deployed in dynamic, real-world environments often face continual learning challenges, where exposure to new tasks and environments can degrade their previously learned abilities. 
+                      This paper explores how leveraging group symmetries in visual representations can enable more effective continual learning in reinforcement learning (RL) systems, allowing agents to generalize across variations while retaining performance on previously encountered tasks.
+                      The approach introduces a group symmetry-aware representation within a continual vision-based RL framework. 
+                      I led the design of a learning architecture that integrates group symmetries, capturing invariant visual features that assist in task generalization. 
+                      By structuring visual observations around symmetry principles, the agent is able to recognize and exploit recurring visual patterns across different tasks. 
+                      Additionally, we validated this approach through real-world experiments, where the agent was exposed to a sequence of visually diverse tasks, testing its ability to generalize and retain knowledge over time.</p>
+                </div>
             </td>
           </tr>
 
