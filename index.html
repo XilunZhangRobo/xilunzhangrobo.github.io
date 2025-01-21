@@ -58,9 +58,9 @@
                 
                 <br>
                 
-                I am passionate about intelligent decision-making algorithms with applications in Robotics. I am particulary interested in few-shot adaptations, skill trasnfer and learning, Robotic Foundation Models.
+                I am passionate about intelligent decision-making algorithms with applications in Robotics. I am particulary interested in dynamic adaptations, skill learning, Robot Foundation Models.
                 <br>
-                <span style="color: red;">I am activetly looking for phd oppotunities starting in Spring and Fall 2025.</span>
+<!--                 <span style="color: red;">I am activetly looking for phd opportunities starting in Fall 2025.</span> -->
               </p>
               <p style="text-align:center">
                 <a href="mailto:xilunz@andrew.cmu.edu">Email</a> &nbsp/&nbsp
@@ -80,6 +80,7 @@
         <section id="News">
             <h2 style="padding-bottom:1vh;"> News </h2>
             <table style="line-height:150%" class="table table-hover table-striped">
+                <tr><td style="width:20%;">2023/08 - I am excited to announce that <a href="https://sim2real-capture.github.io/">Our paper</a> about In-Context Learning for Sim-to-Real System Identifications got accepted by IEEE Robotics and Automation Letters (RA-L), 2025! 
                 <tr><td style="width:20%;">2024/06 - I am joining Esperanto Technologies as a Machine Learning Engineer Intern, working on open-source VLMs in Robotics and Robot Foundation Models.
                 <tr><td style="width:20%;">2023/08 - <a href="https://arxiv.org/pdf/2310.13065.pdf">Our paper</a> about using LLMs+Robotics+Tool Use is online now! Also check the <a href="https://x.com/mengdibellaxu/status/1716447045052215423?s=20">twitter post</a> for interesting demos and join the discussion! 
                 <tr><td style="width:20%;">2023/08 - <a href="https://sites.google.com/view/sim2real-compass">Our paper</a> about closing the sim-to-real gap thourgh causal discovery got accepted by CoRL 2023 for a poster presentation, congratulations to <a href="https://peidehuang.github.io/">Peide</a>!
@@ -93,59 +94,83 @@
         <br>
 
         <section id="Research">
-        <h2> Selected Publications </h2>
+        <h2> Publications </h2>
         <!-- <hr> -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-            <td style="padding:10px;width:20%;vertical-align:middle">
-                <img src="images/covers.gif" alt="hpp" style="border-style: none" width="220">
-              </td>
-              <td style="padding:10px;width:80%;vertical-align:middle">
-                <p>
-                <papertitle>Continual Vision-based Reinforcement Learning with Group Symmetries
-                </papertitle>
-                </p>
-                <a href="https://shiqiliu-67.github.io/"><author>Shiqi Liu<span style="text-transform:uppercase">*</span><author></a>,
-                <a href="https://mxu34.github.io/"><author>Mengdi Xu<span style="text-transform:uppercase">*</span></author></a>,
-                <a href="https://peidehuang.github.io/"><author>Peide Huang</author></a>,
-                <strong>Xilun Zhang</strong>,
-                Yongkang Liu,
-                Kentaro Oguchi, 
-                <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html"><author>Ding Zhao</author></a>
-                <br>
-                <em>Conference on Robot Learning (<strong>CoRL</strong>), 2023. <strong style="color:#B908C5">(oral, 6.6%)</strong> <span style="text-transform:uppercase">*</span> indicates equal contribution. </em>
-                <br>
-                <em>Abridged in RSS 2023 Workshop on Symmetries in Robot Learning.</em><br>
-                <a href="https://arxiv.org/pdf/2210.12301.pdf">[paper]</a>
-                <a href="https://sites.google.com/view/rl-covers/">[webpage]</a>
-            </td>
-          </tr>
+<tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+    <td style="padding:10px;width:20%;vertical-align:middle">
+        <img src="images/capture.gif" alt="hpp" style="border-style: none" width="220">
+    </td>
+    <td style="padding:10px;width:80%;vertical-align:middle">
+        <p>
+            <papertitle>Dynamics as Prompts: In-Context Learning for Sim-to-Real System Identifications</papertitle>
+        </p>
+        <strong>Xilun Zhang<span style="text-transform:uppercase">*</span></strong></a>,
+        <a href="https://shiqiliu-67.github.io/"><author>Shiqi Liu<span style="text-transform:uppercase">*</span></author></a>,
+        <a href="https://peidehuang.github.io/"><author>Peide Huang</author></a>,
+        <a href="https://willxxy.github.io/"><author>William Jongwon Han<author></a>,
+        <a href="https://yiqilyu.me/"><author>Yiqi Lyu<author></a>,  
+        <a href="https://mxu34.github.io/"><author>Mengdi Xu</author></a>,
+        <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html"><author>Ding Zhao</author></a>   
+        <br>
+        <em>IEEE Robotics and Automation Letters (RA-L), 2025 <span style="text-transform:uppercase">*</span> indicates equal contribution.</em>
+        <br>
+        <em>Abridged in AAAI 2025 Workshop on Multi-Agent AI in the Real World Workshop.</em><br>
+        <a href="https://arxiv.org/abs/2410.20357">[paper]</a>
+        <a href="https://sim2real-capture.github.io/">[webpage]</a>
+<!--         <a href="javascript:void(0)" onclick="toggleDescription('desc1')">[description]</a>
+        <div id="desc1" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+            <p>We designed and implemented a method leveraging a transformer model with in-context learning capabilities. 
+              During training, we treated dynamic parameters—such as friction, inertia, and mass—as prompts, guiding the model to align its simulation-based predictions with real-world data. 
+              This work involved setting up simulations that incorporated these prompts, allowing the model to adapt to new environments in real time by learning to adjust based on unique conditions for each task.
+              In this work, I was responsible for experiment designs, algorithm development, and paper writing.
+              Through rigorous experimentation, we demonstrated a significant reduction in the sim-to-real performance gap. 
+              The model achieved a 30% improvement in task success rates compared to baseline methods. 
+              This improvement was particularly notable in environments where dynamic factors were critical to task success, such as in complex object manipulation and navigation tasks.</p>
+        </div> -->
+    </td>
+</tr>
+
+<script>
+    function toggleDescription(id) {
+        const element = document.getElementById(id);
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
 
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
             <td style="padding:10px;width:20%;vertical-align:middle">
-                <img src="images/compass.gif" alt="hpp" style="border-style: none" width="220">
+                <img src="images/HJARL.gif" alt="hpp" style="border-style: none" width="220">
               </td>
               <td style="padding:10px;width:80%;vertical-align:middle">
                 <p>
-                <papertitle>What Went Wrong? Closing the Sim-to-Real Gap via Differentiable Causal Discovery
+                <papertitle>Learning Robust Policies via Interpretable Hamilton-Jacobi Reachability-Guided Disturbances
                 </papertitle>
                 </p>
-                <a href="https://peidehuang.github.io/"><author>Peide Huang</author></a>, 
-                <strong>Xilun Zhang<span style="text-transform:uppercase">*</span></strong>, 
-                Ziang Cao<span style="text-transform:uppercase">*</span>, 
-                <a href="https://shiqiliu-67.github.io/"><author>Shiqi Liu<span style="text-transform:uppercase">*</span><author></a>,
-                <a href="https://mxu34.github.io/"><author>Mengdi Xu</author></a>,
-                <a href="https://wenhao.pub/"><author>Wenhao Ding</author></a>, 
-                Jonathan Francis, 
-                Bingqing Chen,
-                <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html"><author>Ding Zhao</author></a>
+                <a href="https://hu-hanyang.github.io/"><author>Hanyang Hu</author></a>,
+                <strong>Xilun Zhang</strong>,
+                <a href="https://xubo92.github.io/"><author>Xubo Lyu</author></a>,
+                <a href="https://sfumars.com/people/"><author>Mo Chen</author></a>
                 <br>
-                <em>Conference on Robot Learning (<strong>CoRL</strong>), 2023. <span style="text-transform:uppercase">*</span> indicates equal contribution. </em>
+                <em>arxiv, submitted to ICRA 2025. </em>
                 <br>
-                <em>Abridged in  IROS 2023 Workshop on Causality for Robotics: Answering the Question of Why.</em><br>
-                <a href="https://arxiv.org/pdf/2306.15864.pdf">[paper]</a>
-                <a href="https://sites.google.com/view/sim2real-compass">[webpage]</a>
+                <em>Abridged in AAAI 2025 Workshop on Multi-Agent AI in the Real World Workshop.</em><br>
+                <a href="https://arxiv.org/abs/2409.19746">[paper]</a>
+<!--                 <a href="javascript:void(0)" onclick="toggleDescription('desc2')">[description]</a>
+                <div id="desc2" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+                    <p>In robotics, learning policies that are robust to dynamic and environmental uncertainties remains a major challenge, particularly in scenarios requiring resilience against adversarial disturbances. 
+                      This work investigates a novel approach using Hamilton-Jacobi (HJ) Reachability to generate interpretable, optimal disturbances that guide adversarial training, enhancing the robustness of reinforcement learning (RL) policies.
+                      The methodology leverages HJ Reachability analysis to derive optimal disturbances, which serve as interpretable adversarial inputs during RL training. 
+                      I led the development of an environment framework where these disturbances can be applied, both in simulated and real-world environments. 
+                      This setup enabled the reinforcement learning agent to encounter various challenging scenarios induced by HJ-guided disturbances, effectively conditioning the policy for robust behavior. 
+                      Additionally, I validated the effectiveness of HJ disturbances by conducting real-world experiments, tuning the policy’s response to the adversarial inputs for enhanced robustness.</p>
+                </div> -->
             </td>
           </tr>
 
@@ -174,53 +199,76 @@
                 <em>Abridged in CoRL 2023 Workshop on Language and Robot Learning.</em><br>
                 <a href="https://arxiv.org/abs/2310.13065">[paper]</a>
                 <a href="https://creative-robotool.github.io/">[webpage]</a>
+<!--                 <a href="javascript:void(0)" onclick="toggleDescription('desc3')">[description]</a>
+                <div id="desc3" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+                    <p>Traditionally, robots struggle to adaptively use objects in their environment as tools, limiting their utility in unstructured settings. 
+                      The "RoboTool" project explores how Large Language Models (LLMs) can enhance a robot's ability to creatively use various objects as tools by leveraging affordance reasoning.
+                      The project involved integrating an LLM with a robotic system to operate in both simulated and real-world environments. 
+                      I led the development of the manipulation simulation, designing scenarios that allowed the LLM to generate affordance-based prompts for various objects, guiding the robot’s tool use in diverse tasks. 
+                      Additionally, I conducted real-world experiments to validate the simulation findings, fine-tuning the robot’s responses to language-based cues for effective tool manipulation.</p>
+                </div> -->
+                  
             </td>
           </tr>
 
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
             <td style="padding:10px;width:20%;vertical-align:middle">
-                <img src="images/HJARL.gif" alt="hpp" style="border-style: none" width="220">
+                <img src="images/covers.gif" alt="hpp" style="border-style: none" width="220">
               </td>
               <td style="padding:10px;width:80%;vertical-align:middle">
                 <p>
-                <papertitle>Learning Robust Policies via Interpretable Hamilton-Jacobi Reachability-Guided Disturbances
+                <papertitle>Continual Vision-based Reinforcement Learning with Group Symmetries
                 </papertitle>
                 </p>
-                <a href="https://hu-hanyang.github.io/"><author>Hanyang Hu</author></a>,
-                <strong>Xilun Zhang</strong>,
-                <a href="https://xubo92.github.io/"><author>Xubo Lyu</author></a>,
-                <a href="https://sfumars.com/people/"><author>Mo Chen</author></a>
-                <br>
-                <em>arxiv, submitted to ICRA 2025. </em>
-                <br>
-                <a href="https://arxiv.org/abs/2409.19746">[paper]</a>
-<!--                 <a href="https://creative-robotool.github.io/">[webpage]</a> -->
-            </td>
-          </tr>
-
-          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-            <td style="padding:10px;width:20%;vertical-align:middle">
-                <img src="images/HJARL.gif" alt="hpp" style="border-style: none" width="220">
-              </td>
-              <td style="padding:10px;width:80%;vertical-align:middle">
-                <p>
-                <papertitle>Dynamics as Prompts: In-Context Learning for Sim-to-Real System Identifications
-                </papertitle>
-                </p>
-                <strong>Xilun Zhang<span style="text-transform:uppercase">*</span></strong></a>,
-                <a href="https://shiqiliu-67.github.io//"><author>Shiqi Liu<span style="text-transform:uppercase">*</span></author></a>,
+                <a href="https://shiqiliu-67.github.io/"><author>Shiqi Liu<span style="text-transform:uppercase">*</span><author></a>,
+                <a href="https://mxu34.github.io/"><author>Mengdi Xu<span style="text-transform:uppercase">*</span></author></a>,
                 <a href="https://peidehuang.github.io/"><author>Peide Huang</author></a>,
-                <a href="https://willxxy.github.io/"><author>William Jongwon Han<author></a>,
-                <a href="https://https://yiqilyu.me/"><author>Yiqi Lyu<author></a>,  
+                <strong>Xilun Zhang</strong>,
+                Yongkang Liu,
+                Kentaro Oguchi, 
+                <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html"><author>Ding Zhao</author></a>
+                <br>
+                <em>Conference on Robot Learning (<strong>CoRL</strong>), 2023. <strong style="color:#B908C5">(oral, 6.6%)</strong> <span style="text-transform:uppercase">*</span> indicates equal contribution. </em>
+                <br>
+                <em>Abridged in RSS 2023 Workshop on Symmetries in Robot Learning.</em><br>
+                <a href="https://arxiv.org/pdf/2210.12301.pdf">[paper]</a>
+                <a href="https://sites.google.com/view/rl-covers/">[webpage]</a>
+<!--                 <a href="javascript:void(0)" onclick="toggleDescription('desc4')">[description]</a>
+                <div id="desc4" style="display:none; margin-top:10px; padding:10px; border:1px solid #ddd; border-radius:5px; font-size:14px;">
+                    <p>Robotic agents deployed in dynamic, real-world environments often face continual learning challenges, where exposure to new tasks and environments can degrade their previously learned abilities. 
+                      This paper explores how leveraging group symmetries in visual representations can enable more effective continual learning in reinforcement learning (RL) systems, allowing agents to generalize across variations while retaining performance on previously encountered tasks.
+                      The approach introduces a group symmetry-aware representation within a continual vision-based RL framework. 
+                      I led the design of a learning architecture that integrates group symmetries, capturing invariant visual features that assist in task generalization. 
+                      By structuring visual observations around symmetry principles, the agent is able to recognize and exploit recurring visual patterns across different tasks. 
+                      Additionally, we validated this approach through real-world experiments, where the agent was exposed to a sequence of visually diverse tasks, testing its ability to generalize and retain knowledge over time.</p>
+                </div> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:10px;width:20%;vertical-align:middle">
+                <img src="images/compass.gif" alt="hpp" style="border-style: none" width="220">
+              </td>
+              <td style="padding:10px;width:80%;vertical-align:middle">
+                <p>
+                <papertitle>What Went Wrong? Closing the Sim-to-Real Gap via Differentiable Causal Discovery
+                </papertitle>
+                </p>
+                <a href="https://peidehuang.github.io/"><author>Peide Huang</author></a>, 
+                <strong>Xilun Zhang<span style="text-transform:uppercase">*</span></strong>, 
+                <a href="https://zi-ang-cao.github.io/"><author>Zi-ang Cao<span style="text-transform:uppercase">*</span><author></a>, 
+                <a href="https://shiqiliu-67.github.io/"><author>Shiqi Liu<span style="text-transform:uppercase">*</span><author></a>,
                 <a href="https://mxu34.github.io/"><author>Mengdi Xu</author></a>,
-                <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html"><author>Ding Zhao</author></a>   
+                <a href="https://wenhao.pub/"><author>Wenhao Ding</author></a>, 
+                Jonathan Francis, 
+                Bingqing Chen,
+                <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html"><author>Ding Zhao</author></a>
                 <br>
-                <em>arxiv, submitted to RAL. </em>
+                <em>Conference on Robot Learning (<strong>CoRL</strong>), 2023. <span style="text-transform:uppercase">*</span> indicates equal contribution. </em>
                 <br>
-                [paper coming soon!]</a>
-                [webpage coming soon!]</a>
-<!--                 <a href="https://arxiv.org/abs/2409.19746">[paper]</a> -->
-<!--                 <a href="https://creative-robotool.github.io/">[webpage]</a> -->
+                <em>Abridged in  IROS 2023 Workshop on Causality for Robotics: Answering the Question of Why.</em><br>
+                <a href="https://arxiv.org/pdf/2306.15864.pdf">[paper]</a>
+                <a href="https://sites.google.com/view/sim2real-compass">[webpage]</a>
             </td>
           </tr>
 
@@ -256,14 +304,14 @@
           </table>
         </section> -->
 
-<!--         <section id="Service" >
+        <section id="Service" >
             <h2 style="padding-bottom:1vh;">Service</h2>    
             <table style="line-height:150%" class="table table-hover table-striped">
-              <tr><td style="width:25%;">Conference Reviewer: ICCV 2023, CVPR 2023, ICLR 2023, AISTATS 2023, NeurIPS 2022, ICML 2022-2023, AAAI 2022 </td></tr>
-              <tr><td style="width:25%;">Journal Reviewer: T-ITS </td></tr>
-              <tr><td style="width:25%">Program Committee: TSRML, NeurIPS 2022 </td></tr>
+              <tr><td style="width:25%;">Conference Reviewer: ICRA 2025 </td></tr>
+              <tr><td style="width:25%;">Journal Reviewer: RA-L </td></tr>
+              
             </table>
-        </section> -->
+        </section>
 
         <section id="Project" >
             <h2 style="padding-bottom:1vh;">Projects</h2>    
@@ -284,6 +332,7 @@
                 Jian Chen
                 <br>
                 <em>16-831: Intro to Robot Learning(by Deepak Pathak) </em>
+                <a href="https://drive.google.com/file/d/1mQqSGy5NBrEeXSAV4wcLU3v1RdYruRnh/view?usp=sharing">[paper]</a>
             </td>
             </tr>
             <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
