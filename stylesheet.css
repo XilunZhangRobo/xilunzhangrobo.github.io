@@ -218,9 +218,9 @@ section {
   font-weight: 600;
 }
 
-.pub-venue .award-tag {
-  color: #c9941b;
-  font-weight: 600;
+.award-tag {
+  color: #e09010;
+  font-weight: 700;
 }
 
 .pub-links {
