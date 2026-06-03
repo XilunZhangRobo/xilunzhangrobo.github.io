@@ -218,6 +218,11 @@ section {
   font-weight: 600;
 }
 
+.pub-venue .award-tag {
+  color: #c9941b;
+  font-weight: 600;
+}
+
 .pub-links {
   display: flex;
   gap: 6px;
